@@ -536,6 +536,17 @@ button {
     top: 50%;
     width: 528px;
     height: 581px;
+    padding: 40px;
+    display: inline-block;
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-main);
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: #AFB1B8;
+    /*display: flex;
+    align-items: center;
+    flex-direction: column;*/
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -561,6 +572,37 @@ button {
     background-color: white;
     outline: none;
     cursor: pointer;
+}
+
+.modal-title {
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-secondary);
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.modal-form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-form {
+    width: 448px;
+    height: 342px;
+    margin-top: 12px;
+}
+
+.name-form-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.name-form-input {
+    width: 100%;
 }
 
 /*footer*/

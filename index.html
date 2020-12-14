@@ -395,25 +395,27 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button data-modal-close class="modal-button"></button>
-          <form class="modal-form">
-            <label> Имя <input type="text" name="name" /> </label>
-            <label> Телефон <input type="tel" name="telephone" /> </label>
-            <label>
-              Почта
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Комментарий
-              <textarea
-                name="comment"
-                rows="10"
-                cols="45"
-                placeholder="Введите текст"
-              >
-              </textarea>
-            </label>
-          </form>
-          <div class="form-field">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-form">
+            <form class="name-form">
+              <label class="name-form-label">
+                Имя <input class="name-form-input" type="text" name="name" />
+              </label>
+              <label class="name-form-label">
+                Телефон
+                <input class="name-form-input" type="tel" name="telephone" />
+              </label>
+              <label class="name-form-label">
+                Почта
+                <input class="name-form-input" type="email" name="email" />
+              </label>
+              <label>
+                Комментарий
+                <textarea name="comment" placeholder="Введите текст">
+                </textarea>
+              </label>
+            </form>
+
             <input
               type="checkbox"
               class="form-input"
@@ -425,8 +427,9 @@
               >Соглашаюсь с рассылкой и принимаю
               <a href=""> Условия договора </a>
             </label>
+
+            <button type="submit">Отправить</button>
           </div>
-          <button type="submit">Отправить</button>
         </div>
       </div>
     </main>
