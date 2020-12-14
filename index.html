@@ -409,27 +409,30 @@
                 Почта
                 <input class="name-form-input" type="email" name="email" />
               </label>
-              <label>
+              <label class="name-form-label">
                 Комментарий
-                <textarea name="comment" placeholder="Введите текст">
-                </textarea>
+                <textarea
+                  class="textarea-input"
+                  name="comment"
+                  rows="7"
+                  placeholder="Введите текст"
+                ></textarea>
               </label>
             </form>
-
-            <input
-              type="checkbox"
-              class="form-input"
-              name="agreement"
-              value="agreement"
-              id="agreement"
-            />
-            <label class="form-label" for="agreement"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href=""> Условия договора </a>
-            </label>
-
-            <button type="submit">Отправить</button>
           </div>
+          <input
+            type="checkbox"
+            class="form-input"
+            name="agreement"
+            value="agreement"
+            id="agreement"
+          />
+          <label class="form-label" for="agreement"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href=""> Условия договора </a>
+          </label>
+
+          <button type="submit">Отправить</button>
         </div>
       </div>
     </main>
