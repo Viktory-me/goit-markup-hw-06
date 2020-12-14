@@ -395,6 +395,38 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button data-modal-close class="modal-button"></button>
+          <form class="modal-form">
+            <label> Имя <input type="text" name="name" /> </label>
+            <label> Телефон <input type="tel" name="telephone" /> </label>
+            <label>
+              Почта
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Комментарий
+              <textarea
+                name="comment"
+                rows="10"
+                cols="45"
+                placeholder="Введите текст"
+              >
+              </textarea>
+            </label>
+          </form>
+          <div class="form-field">
+            <input
+              type="checkbox"
+              class="form-input"
+              name="agreement"
+              value="agreement"
+              id="agreement"
+            />
+            <label class="form-label" for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href=""> Условия договора </a>
+            </label>
+          </div>
+          <button type="submit">Отправить</button>
         </div>
       </div>
     </main>
