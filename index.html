@@ -395,44 +395,63 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button data-modal-close class="modal-button"></button>
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="modal-form">
-            <form class="name-form">
-              <label class="name-form-label">
-                Имя <input class="name-form-input" type="text" name="name" />
+          <form class="name-form">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="field-form person">
+              <label class="form-label" for="name"> Имя </label>
+              <input class="form-input" type="text" name="name" id="name" />
+              <span class="icon-input">
+                <svg class="icon-input-card">
+                  <use href="./images/symbol-defs.svg#icon-person"></use></svg
+              ></span>
+            </div>
+            <div class="field-form phone">
+              <label class="form-label" for="tel"> Телефон </label>
+              <input class="form-input phone" type="tel" name="tel" id="tel" />
+              <span class="icon-input">
+                <svg class="icon-input-card">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use></svg
+              ></span>
+            </div>
+            <div class="field-form mail">
+              <label class="form-label" for="email"> Почта </label>
+              <input
+                class="form-input mail"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+              /><span class="icon-input">
+                <svg class="icon-input-card">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use></svg
+              ></span>
+            </div>
+            <div class="field-form">
+              <label class="form-label" for="comment"> Комментарий </label>
+              <textarea
+                class="form-input-textarea"
+                name="comment"
+                id="comment"
+                rows="7"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <div class="">
+              <input
+                class="agreement-input"
+                type="checkbox"
+                class=""
+                name="agreement"
+                value="agreement"
+                id="agreement"
+              />
+              <label class="agreement-label" for="agreement"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href=""> Условия договора </a>
               </label>
-              <label class="name-form-label">
-                Телефон
-                <input class="name-form-input" type="tel" name="telephone" />
-              </label>
-              <label class="name-form-label">
-                Почта
-                <input class="name-form-input" type="email" name="email" />
-              </label>
-              <label class="name-form-label">
-                Комментарий
-                <textarea
-                  class="textarea-input"
-                  name="comment"
-                  rows="7"
-                  placeholder="Введите текст"
-                ></textarea>
-              </label>
-            </form>
-          </div>
-          <input
-            type="checkbox"
-            class="form-input"
-            name="agreement"
-            value="agreement"
-            id="agreement"
-          />
-          <label class="form-label" for="agreement"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href=""> Условия договора </a>
-          </label>
-
-          <button type="submit">Отправить</button>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
@@ -500,7 +519,7 @@
           </ul>
         </div>
         <div class="form-list">
-          <form class="footer-form">
+          <form class="footer-form" autocomplete="off">
             <label class="footer-form-label">
               Подпишитесь на рассылку
               <input
