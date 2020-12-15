@@ -399,7 +399,13 @@
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
             <div class="field-form person">
               <label class="form-label" for="name"> Имя </label>
-              <input class="form-input" type="text" name="name" id="name" />
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                autofocus
+              />
               <span class="icon-input">
                 <svg class="icon-input-card">
                   <use href="./images/symbol-defs.svg#icon-person"></use></svg
@@ -447,10 +453,10 @@
               />
               <label class="agreement-label" for="agreement"
                 >Соглашаюсь с рассылкой и принимаю
-                <a href=""> Условия договора </a>
+                <a href="" class="form-agreement"> Условия договора </a>
               </label>
             </div>
-            <button type="submit">Отправить</button>
+            <button class="form-btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>
