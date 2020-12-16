@@ -565,13 +565,21 @@ button {
     margin: 0;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-image: url("../images/Vector.svg");
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     outline: none;
     cursor: pointer;
+}
+
+.icon-btn-close {
+    width: 11px;
+    height: 11px;
+}
+
+.modal-button:hover, .modal-button:focus {
+    fill: var(--accent-color);
 }
 
 .modal-title {
@@ -591,17 +599,11 @@ button {
     padding: 0;
 }
 
-.field-form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
 .form-label {
+    position: relative;
     display: block;
     width: 100%;
-    margin-bottom: 4px;
+    padding-bottom: 10px;
 }
 
 .form-input {
@@ -609,6 +611,8 @@ button {
     padding: 12px 0 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    display: inline-block;
+    margin-top: 4px;
 }
 
 .field-form textarea::placeholder {
@@ -616,45 +620,24 @@ button {
 }
 
 .icon-input-card {
-    max-width: 16px;
-    max-height: 15px;
-    fill: black;
-}
-
-.field-form.person {
-    position: relative;
-}
-
-.person .icon-input {
-    position: absolute;
-    bottom: 14px;
-    left: 13px;
-    width: 12px;
-    height: 12px;
-}
-
-.field-form.phone {
-    position: relative;
-}
-
-.phone .icon-input {
-    position: absolute;
-    bottom: 14px;
-    left: 14px;
-    width: 13px;
+    width: 16px;
     height: 13px;
 }
 
-.field-form.mail {
-    position: relative;
+.icon-input {
+    position: absolute;
+    display: flex;
+    fill: black;
+    align-items: center;
+    text-align: center;
+    left: 13px;
+    transform: translatey(-200%);
 }
 
-.mail .icon-input {
-    position: absolute;
-    bottom: 14px;
-    left: 13px;
-    width: 15px;
-    height: 12px;
+.form-label-textarea {
+    display: inline-block;
+    padding-bottom: 4px;
+    color: rgba(117, 117, 117);
 }
 
 .form-input-textarea {
@@ -665,10 +648,26 @@ button {
     resize: none;
 }
 
+.form-label:focus-within .form-input {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    outline: inherit;
+}
+
+.form-label:focus-within .icon-input-card {
+    fill: var(--accent-color);
+}
+
 .form-agreement {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--accent-color);
+}
+
+.form-input-textarea:focus-within {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    outline: inherit;
 }
 
 .form-btn {
@@ -703,6 +702,8 @@ button {
 }
 
 .agreement-label {
+    display: flex;
+    align-items: center;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: var(--font-weight-main);
@@ -710,6 +711,33 @@ button {
     line-height: 1.714;
     letter-spacing: 0.03em;
     margin-left: 7px;
+}
+
+.icon-cheked-card {
+    width: 16px;
+    height: 15px;
+    fill: var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    background-origin: border-box;
+}
+
+.icon-cheked {
+    display: flex;
+    align-items: center;
+}
+
+.agreement-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*footer*/

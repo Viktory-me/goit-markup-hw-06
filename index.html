@@ -394,50 +394,47 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="modal-button"></button>
+          <button data-modal-close class="modal-button">
+            <svg class="icon-btn-close">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
           <form class="name-form">
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <div class="field-form person">
-              <label class="form-label" for="name"> Имя </label>
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                id="name"
-                autofocus
-              />
+            <label class="form-label">
+              Имя
+              <input class="form-input" type="text" name="name" autofocus />
               <span class="icon-input">
                 <svg class="icon-input-card">
-                  <use href="./images/symbol-defs.svg#icon-person"></use></svg
-              ></span>
-            </div>
-            <div class="field-form phone">
-              <label class="form-label" for="tel"> Телефон </label>
-              <input class="form-input phone" type="tel" name="tel" id="tel" />
+                  <use
+                    href="./images/symbol-defs.svg#icon-person"
+                  ></use></svg></span
+            ></label>
+            <label class="form-label">
+              Телефон
+              <input class="form-input" type="tel" name="tel" />
               <span class="icon-input">
                 <svg class="icon-input-card">
                   <use href="./images/symbol-defs.svg#icon-phone"></use></svg
               ></span>
-            </div>
-            <div class="field-form mail">
-              <label class="form-label" for="email"> Почта </label>
+            </label>
+            <label class="form-label">
+              Почта
               <input
-                class="form-input mail"
+                class="form-input"
                 type="email"
                 name="email"
-                id="email"
-                autocomplete="off"
-              /><span class="icon-input">
+                autocomplete="off" /><span class="icon-input">
                 <svg class="icon-input-card">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use></svg
-              ></span>
-            </div>
+                  <use
+                    href="./images/symbol-defs.svg#icon-mail"
+                  ></use></svg></span
+            ></label>
             <div class="field-form">
-              <label class="form-label" for="comment"> Комментарий </label>
+              <label class="form-label-textarea"> Комментарий </label>
               <textarea
                 class="form-input-textarea"
                 name="comment"
-                id="comment"
                 rows="7"
                 placeholder="Введите текст"
               ></textarea>
@@ -451,6 +448,10 @@
                 value="agreement"
                 id="agreement"
               />
+              <span class="icon-cheked">
+                <svg class="icon-cheked-card">
+                  <use href="./images/symbol-defs.svg#icon-check"></use></svg
+              ></span>
               <label class="agreement-label" for="agreement"
                 >Соглашаюсь с рассылкой и принимаю
                 <a href="" class="form-agreement"> Условия договора </a>
