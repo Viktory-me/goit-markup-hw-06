@@ -613,6 +613,7 @@ button {
     border-radius: 4px;
     display: inline-block;
     margin-top: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .field-form textarea::placeholder {
@@ -626,6 +627,7 @@ button {
 .icon-input-card {
     width: 16px;
     height: 13px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-input {
@@ -650,6 +652,7 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label:focus-within .form-input {
@@ -725,7 +728,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 2px;
     background-color: white;
     transition: background-color, border-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,7 +736,7 @@ button {
 
 .agreement-input:checked+.icon-cheked {
     background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 .agreement-input {
