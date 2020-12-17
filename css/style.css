@@ -665,6 +665,10 @@ button {
     fill: var(--accent-color);
 }
 
+.form-label:hover .icon-input-card {
+    fill: var(--accent-color);
+}
+
 .form-agreement {
     text-decoration: underline;
     text-decoration-skip-ink: none;
